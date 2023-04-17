@@ -12,8 +12,7 @@ body
         margin: auto;
         margin: 20 0 0 300px;
         padding: 80px;
-        background:	#3b444b;
-
+        background:#4f666a ;
         align-items: center;
         margin-top: 100px;
 
@@ -54,10 +53,10 @@ label{
     color: black;
     padding-left: 5px;
     font-size: medium;
-    align-items: inherit;
     cursor: pointer;
     transition: .5s;
     background-color: #fffffffe;
+    padding: 10px 20px;
 }
 span{
     color: white;
@@ -67,3 +66,27 @@ a{
     float: right;
     background-color: grey;
 }
+
+.btn {
+    background-color:#c0c0c0;
+    margin-right: auto;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+  }
+
+  .btn1 {
+    background-color:#c0c0c0;
+    border: none;
+    color: white;
+    padding: 12px 26px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: auto;
+    font-style: normal;
+  }

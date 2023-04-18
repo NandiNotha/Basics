@@ -145,7 +145,8 @@ a{
   table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 80%;
+    background-color: darkgrey;
   }
   
   td, th {
@@ -155,5 +156,5 @@ a{
   }
   
   tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #dddddd63;
   }

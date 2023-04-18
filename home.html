@@ -1,62 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="table.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+  <title>Table with Edit, Delete and Add Features</title>
 </head>
-<p>Welcome to my Home Page!</p>
 <body>
-    <h>Simple Table</h>
+  <div class="container">
+    <div class="table-wrapper">
+      <div class="table-title">
+        <div class="row">
+          <div class="col-sm-8">
+            <h2><b>Simple Table</b></h2>
+          </div>
+          <div class="col-sm-4">
+            <button type="button" class="btn btn-info add-new">
+              <i class="fa fa-plus"></i> Add New
+            </button>
+          </div>
+        </div>
+      </div>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Country</th>
+            <th>City</th>
+            <th>salary</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dakota Rice</td>
+            <td>Niger</td>
+            <td>Oud Tunhout</td>
+            <td>$34 746</td>
+           <td>
+              <a class="add" title="Add" data-toggle="tooltip"
+                ><i class="material-icons">&#xE03B;</i></a
+              >
+              <a class="edit" title="Edit" data-toggle="tooltip"
+                ><i class="material-icons">&#xE254;</i></a
+              >
+              <a class="delete" title="Delete" data-toggle="tooltip"
+                ><i class="material-icons">&#xE872;</i></a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Minerva Hooper</td>
+            <td>Curacao</td>
+            <td>Sanaai Waas</td>
+            <td>$4 767</td>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Country</th>
-    <th>City</th>
-    <th>salary</th>
-  </tr>
-  <tr>
-    <td>Dakota Rice</td>
-    <td>Niger</td>
-    <td>Oud Tunhout</td>
-    <td>$34 746</td>
-    
-  </tr>
-  <tr>
-    <td>Minerva Hooper</td>
-    <td>Curacao</td>
-    <td>Sanaai Waas</td>
-    <td>$4 767</td>
-  </tr>
-  <tr>
-    <td>Sage Rodriguez</td>
-    <td>Nitherlands</td>
-    <td>Bailaux</td>
-    <td>$11 047</td>
-  </tr>
-  <tr>
-    <td>Phillip Chaney</td>
-    <td>Korea, South</td>
-    <td>Overland Park</td>
-    <td>$16 722</td>
-  </tr>
-  <tr>
-    <td>Doris Greene</td>
-    <td>Malawi</td>
-    <td>Feldkirchen in Karnten</td>
-    <td>$10 653</td>
-  </tr>
-  <tr>
-    <td>Mason Porter</td>
-    <td>Chile</td>
-    <td>Gloucester</td>
-    <td>$26 203</td>
-    
-  </tr>
-</table>
+            <td>
+              <a class="add" title="Add" data-toggle="tooltip"
+                ><i class="material-icons">&#xE03B;</i></a
+              >
+              <a class="edit" title="Edit" data-toggle="tooltip"
+                ><i class="material-icons">&#xE254;</i></a
+              >
+              <a class="delete" title="Delete" data-toggle="tooltip"
+                ><i class="material-icons">&#xE872;</i></a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Sage Rodriguez</td>
+            <td>Nitherlands</td>
+            <td>Bailaux</td>
+            <td>$11 047</td>
+          <td>
+              <a class="add" title="Add" data-toggle="tooltip"
+                ><i class="material-icons">&#xE03B;</i></a
+              >
+              <a class="edit" title="Edit" data-toggle="tooltip"
+                ><i class="material-icons">&#xE254;</i></a
+              >
+              <a class="delete" title="Delete" data-toggle="tooltip"
+                ><i class="material-icons">&#xE872;</i></a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Phillip Chaney</td>
+            <td>Korea, South</td>
+            <td>Overland Park</td>
+            <td>$16 722</td>
+           <td>
+              <a class="add" title="Add" data-toggle="tooltip"
+                ><i class="material-icons">&#xE03B;</i></a
+              >
+              <a class="edit" title="Edit" data-toggle="tooltip"
+                ><i class="material-icons">&#xE254;</i></a
+              >
+              <a class="delete" title="Delete" data-toggle="tooltip"
+                ><i class="material-icons">&#xE872;</i></a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Doris Greene</td>
+            <td>Malawi</td>
+            <td>Feldkirchen in Karnten</td>
+            <td>$10 653</td>
+          <td>
+              <a class="add" title="Add" data-toggle="tooltip"
+                ><i class="material-icons">&#xE03B;</i></a
+              >
+              <a class="edit" title="Edit" data-toggle="tooltip"
+                ><i class="material-icons">&#xE254;</i></a
+              >
+              <a class="delete" title="Delete" data-toggle="tooltip"
+                ><i class="material-icons">&#xE872;</i></a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Mason Porter</td>
+            <td>Chile</td>
+            <td>Gloucester</td>
+            <td>$26 203</td>
+          <td>
+              <a class="add" title="Add" data-toggle="tooltip"
+                ><i class="material-icons">&#xE03B;</i></a
+              >
+              <a class="edit" title="Edit" data-toggle="tooltip"
+                ><i class="material-icons">&#xE254;</i></a
+              >
+              <a class="delete" title="Delete" data-toggle="tooltip"
+                ><i class="material-icons">&#xE872;</i></a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </body>
 </html>
-
